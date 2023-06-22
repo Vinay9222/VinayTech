@@ -1,30 +1,30 @@
 import React, { useState } from "react";
 import "./index.css";
 const Contact = () => {
-  const [data, setData] = useState({
-    fullname: "",
-    phone: "",
-    email: "",
-    msg: "",
-  });
+  // const [data, setData] = useState({
+  //   fullname: "",
+  //   phone: "",
+  //   email: "",
+  //   msg: "",
+  // });
 
-  const InputEvent = (event) => {
-    const { name, value } = event.target;
+  // const InputEvent = (event) => {
+  //   const { name, value } = event.target;
 
-    setData((pre) => {
-      return {
-        ...pre,
-        [name]: value,
-      };
-    });
-  };
+  //   setData((pre) => {
+  //     return {
+  //       ...pre,
+  //       [name]: value,
+  //     };
+  //   });
+  // };
 
-  const formState = (e) => {
-    e.preventDefault();
-    alert(
-      `My name is ${data.fullname}. My mobile number is ${data.phone}. My emil id is ${data.email}. My msg is ${data.msg}`
-    );
-  };
+  // const formState = (e) => {
+  //   e.preventDefault();
+  //   alert(
+  //     `My name is ${data.fullname}. My mobile number is ${data.phone}. My emil id is ${data.email}. My msg is ${data.msg}`
+  //   );
+  // };
 
   return (
     <>
@@ -32,6 +32,15 @@ const Contact = () => {
         <h1 className="text-center"> Contact Us </h1>
       </div>
       <div className="container contact_div">
+        <div className="row">
+          <div className="col-md-6 col-10 mx-auto">
+            <h1>Name :- Vinay Chougale-Salokhe</h1>
+            <h4>Mobile No. :- 7020496460 </h4>
+            <h4>Email ID :- vinaychougale9222@gmail.com</h4>
+          </div>
+        </div>
+      </div>
+      {/* <div className="container contact_div">
         <div className="row">
           <div className="col-md-6 col-10 mx-auto">
             <form onSubmit={formState}>
@@ -89,7 +98,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
